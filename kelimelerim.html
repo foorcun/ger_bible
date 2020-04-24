@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+     <!-- jquery buraya -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <!-- mirandajs burda -->
+    <!--  <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
+        crossorigin="anonymous"></script> -->
+<script src="js/jquery.miranda.js"></script>
+    <!-- we link the the CDN css files  here -->
+    <!-- bootstrayp cssler buraya -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="kelimelerim.css">
+    <script type="text/javascript" src="kelimelerim.json"></script>
+    <script src="kelimelerim.js"></script>
+
+</head>
+
+<body>
+
+    <!-- we code here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Yazı alanı</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kelimelerim</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+<section  class="section-primary">
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">French</th>
+            <th scope="col">English</th>
+            <th scope="col">Türkçe</th>
+            <th scope="col">Açıklama</th>
+            <th scope="col">Bilme puanı 0-5</th>
+          </tr>
+        </thead>
+        <tbody id="datalar">
+         
+
+        <tr>
+            <th scope="row">[[id]]</th>
+            <td>[[French]]</td>
+            <td>[[English]]</td>
+            <td>[[Türkçe]]</td>
+            <td>[[Açıklama]]</td>
+            <td>[[Bilme]]</td>
+        </tr>
+
+
+
+
+        </tbody>
+      </table>
+</div>
+<script>
+    var list = kelimelerim;
+    $("#datalar").mirandajs(list);
+    </script>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- javascript files should be linked at the bottom of the page (galba sadece javascript CDN leri bottomda olmalı) -->
+
+   
+
+    <!-- bootstrap js ler buraya -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+      
+</body>
+
+</html>
